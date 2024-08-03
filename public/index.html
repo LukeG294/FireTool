@@ -22,11 +22,13 @@
       font-family: 'Inter', sans-serif;
       display: flex;
       justify-content: center;
-      align-items: center;
-      flex-direction: column;
+      align-items: flex-start;
+      flex-direction: row;
       height: 100vh;
       margin: 0;
       background: #f4f4f9;
+      padding: 20px;
+      box-sizing: border-box;
     }
     h1 {
       text-align: center;
@@ -40,6 +42,8 @@
       text-align: center;
       width: 90%;
       max-width: 500px;
+      margin-right: 20px;
+      box-sizing: border-box;
     }
     label {
       display: block;
@@ -156,6 +160,46 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    .content {
+      max-width: 800px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+    .content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    .content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .content li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .ads-space {
+      height: 100px; /* Adjust the height as needed */
+      margin-bottom: 20px;
+      background: #f9f9f9;
+      border: 1px dashed #ddd;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font-size: 14px;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -178,8 +222,33 @@
     <input type="text" id="fieldValue" name="fieldValue"><br>
 
     <button type="submit" id="submitButton">Update</button>
+    <div class="disclaimer">Service account credentials are not stored.</div>
   </form>
-  <div class="disclaimer">Service account credentials are not stored.</div>
+  
+  <div class="content">
+    <h2>About FireTool</h2>
+    <div class="ads-space">Ads Space</div>
+    <p>FireTool is an innovative solution designed to simplify bulk updates in Firebase Firestore. It enables users to quickly and efficiently update multiple documents within a Firestore collection. Our tool is built with user experience in mind, ensuring that even those with minimal technical knowledge can perform bulk updates with ease.</p>
+    <h2>Features</h2>
+    <ul>
+      <li><strong>Ease of Use:</strong> Simple drag-and-drop interface for uploading service account files.</li>
+      <li><strong>Secure:</strong> Service account credentials are not stored and are only used for the current session.</li>
+      <li><strong>Flexible:</strong> Allows updating of any field within a Firestore collection. If the field does not exist, it will be created.</li>
+    </ul>
+    <div class="ads-space">Ads Space</div>
+    <h2>How It Works</h2>
+    <p>Using FireTool is straightforward. Simply upload your Firebase service account JSON file, specify the collection path, the field name, and the new field value. Click 'Update' and FireTool will handle the rest, ensuring that all specified documents in the collection are updated accordingly.</p>
+    <h2>Benefits of Using FireTool</h2>
+    <ul>
+      <li><strong>Time-Saving:</strong> Quickly perform bulk updates that would otherwise require extensive manual work.</li>
+      <li><strong>Accuracy:</strong> Minimize the risk of errors that can occur with manual data entry.</li>
+      <li><strong>Efficiency:</strong> Streamline your workflow and enhance productivity by automating routine tasks.</li>
+    </ul>
+    <div class="ads-space">Ads Space</div>
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need further assistance, feel free to reach out to our support team at <a href="mailto:support@firetool.com">support@firetool.com</a>.</p>
+  </div>
+  
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const fileInput = document.getElementById('serviceAccount');
