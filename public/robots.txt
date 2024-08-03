@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /upload
+
+Sitemap: https://firetool.software/sitemap.xml
