@@ -1,38 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EMPLB8PQ64"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'G-EMPLB8PQ64');
-  </script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1430054911512403"
-     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FireTool</title>
+  <title>FireTool - The Best Firebase Firestore Database Storage Update Tool</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="icon" href="https://www.gstatic.com/devrel-devsite/prod/v8c8ec5f90d3e078ddd668309d42cb633e54798872586821a55652000226f878b/firebase/images/touchicon-180.png" type="image/png">
+  <link rel="icon" href="https://static-00.iconduck.com/assets.00/fire-emoji-804x1024-u29u5i0c.png" type="image/png">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="FireTool is the ultimate web tool for batch updating your Firebase Firestore database storage. Quickly and efficiently update multiple documents within your Firestore collections with ease.">
+  <meta name="keywords" content="Firebase, Firestore, database, storage, update, bulk update, batch update, web tool, Firebase Firestore tool, database management, FireTool, Firestore update, Firebase bulk update, database storage update, Firestore management tool, Firebase settings, Firebase web tool">
+  <meta name="author" content="FireTool Team">
+  <link rel="canonical" href="https://firetool.software">
+  <meta property="og:title" content="FireTool - The Best Firebase Firestore Database Storage Update Tool">
+  <meta property="og:description" content="FireTool is the ultimate web tool for batch updating your Firebase Firestore database storage. Quickly and efficiently update multiple documents within your Firestore collections with ease.">
+  <meta property="og:image" content="https://static-00.iconduck.com/assets.00/fire-emoji-804x1024-u29u5i0c.png">
+  <meta property="og:url" content="https://firetool.software">
+  <meta property="og:type" content="website">
   <style>
     body {
       font-family: 'Inter', sans-serif;
+      background: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      background: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+    header h1, footer p {
+      margin: 0;
+    }
+    header h1 img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    nav {
+      background: #0056b3;
+      color: white;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      flex: 1;
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      flex-direction: row;
-      height: 100vh;
-      margin: 0;
-      background: #f4f4f9;
       padding: 20px;
       box-sizing: border-box;
     }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
+    .sidebar {
+      width: 250px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 1em;
+      margin-right: 20px;
+    }
+    .sidebar h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin-top: 0;
+    }
+    .sidebar a {
+      display: block;
+      color: #007BFF;
+      text-decoration: none;
+      margin: 5px 0;
+    }
+    .sidebar a:hover {
+      text-decoration: underline;
     }
     form {
       background: white;
@@ -42,7 +94,6 @@
       text-align: center;
       width: 90%;
       max-width: 500px;
-      margin-right: 20px;
       box-sizing: border-box;
     }
     label {
@@ -70,7 +121,7 @@
       padding: 5px;
       position: absolute;
       z-index: 1;
-      bottom: 125%; /* Position the tooltip above the icon */
+      bottom: 125%;
       left: 50%;
       margin-left: -100px;
       opacity: 0;
@@ -160,95 +211,57 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    .content {
-      max-width: 800px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      box-sizing: border-box;
-      display: flex;
-      flex-direction: column;
-    }
-    .content h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-    .content p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin-bottom: 20px;
-    }
-    .content ul {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-bottom: 20px;
-    }
-    .content li {
-      margin-bottom: 10px;
-      font-size: 16px;
-    }
-    .ads-space {
-      height: 100px; /* Adjust the height as needed */
-      margin-bottom: 20px;
-      background: #f9f9f9;
-      border: 1px dashed #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #999;
-      font-size: 14px;
-      font-style: italic;
-    }
   </style>
 </head>
 <body>
-  <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-    <h1>Firebase Firestore Bulk Update</h1>
-    <label for="serviceAccount">Service Account File:
-      <span class="tooltip">?
-        <span class="tooltiptext">You can generate one in your Firebase project settings.</span>
-      </span>
-    </label>
-    <div class="file-drop-area" id="fileDropArea">
-      <input type="file" id="serviceAccount" name="serviceAccount" accept=".json" required>
+  <header>
+    <h1><img src="https://static-00.iconduck.com/assets.00/fire-emoji-804x1024-u29u5i0c.png" alt="FireTool Logo" width="30"> FireTool</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="features.html">Features</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="benefits.html">Benefits</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="tos.html">Terms of Service</a>
+    <a href="cookies.html">Cookies</a>
+  </nav>
+  <div class="container">
+    <div class="sidebar">
+      <h3>Firebase Resources</h3>
+      <a href="https://firebase.google.com/docs">Firebase Documentation</a>
+      <a href="https://firebase.google.com/docs/firestore">Firestore Guide</a>
+      <a href="https://firebase.google.com/docs/auth">Firebase Authentication</a>
+      <a href="https://firebase.google.com/docs/storage">Firebase Storage</a>
+      <a href="https://firebase.google.com/docs/functions">Firebase Cloud Functions</a>
     </div>
-    <div class="file-name" id="fileName"></div>
-    <label for="collectionPath">Collection Path (with / after):</label>
-    <input type="text" id="collectionPath" name="collectionPath" required placeholder="Example: /people/"><br>
-    <label for="fieldName">Field Name:</label>
-    <input type="text" id="fieldName" name="fieldName" required placeholder="Entering a field that doesn't exist will create it."><br>
-    <label for="fieldValue">New Field Value:</label>
-    <input type="text" id="fieldValue" name="fieldValue"><br>
-
-    <button type="submit" id="submitButton">Update</button>
-    <div class="disclaimer">Service account credentials are not stored.</div>
-  </form>
-  
-  <div class="content">
-    <h2>About FireTool</h2>
-    <div class="ads-space">Ads Space</div>
-    <p>FireTool is an innovative solution designed to simplify bulk updates in Firebase Firestore. It enables users to quickly and efficiently update multiple documents within a Firestore collection. Our tool is built with user experience in mind, ensuring that even those with minimal technical knowledge can perform bulk updates with ease.</p>
-    <h2>Features</h2>
-    <ul>
-      <li><strong>Ease of Use:</strong> Simple drag-and-drop interface for uploading service account files.</li>
-      <li><strong>Secure:</strong> Service account credentials are not stored and are only used for the current session.</li>
-      <li><strong>Flexible:</strong> Allows updating of any field within a Firestore collection. If the field does not exist, it will be created.</li>
-    </ul>
-    <div class="ads-space">Ads Space</div>
-    <h2>How It Works</h2>
-    <p>Using FireTool is straightforward. Simply upload your Firebase service account JSON file, specify the collection path, the field name, and the new field value. Click 'Update' and FireTool will handle the rest, ensuring that all specified documents in the collection are updated accordingly.</p>
-    <h2>Benefits of Using FireTool</h2>
-    <ul>
-      <li><strong>Time-Saving:</strong> Quickly perform bulk updates that would otherwise require extensive manual work.</li>
-      <li><strong>Accuracy:</strong> Minimize the risk of errors that can occur with manual data entry.</li>
-      <li><strong>Efficiency:</strong> Streamline your workflow and enhance productivity by automating routine tasks.</li>
-    </ul>
-    <div class="ads-space">Ads Space</div>
-    <h2>Contact Us</h2>
-    <p>If you have any questions or need further assistance, feel free to reach out to our support team at <a href="mailto:support@firetool.com">support@firetool.com</a>.</p>
+    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+      <h1>Firestore Bulk Update</h1>
+      <h4 style="color:gray">A tool to help you update Firebase documents for development quickly in the web.</h4>
+      <label for="serviceAccount">Service Account File:
+        <span class="tooltip">?
+          <span class="tooltiptext">You can generate one in your Firebase project settings.</span>
+        </span>
+      </label>
+      <div class="file-drop-area" id="fileDropArea">
+        <input type="file" id="serviceAccount" name="serviceAccount" accept=".json" required>
+      </div>
+      <div class="file-name" id="fileName"></div>
+      <label for="collectionPath">Collection Path (with / after):</label>
+      <input type="text" id="collectionPath" name="collectionPath" required placeholder="Example: /people/"><br>
+      <label for="fieldName">Field Name:</label>
+      <input type="text" id="fieldName" name="fieldName" required placeholder="Entering a field that doesn't exist will create it."><br>
+      <label for="fieldValue">New Field Value:</label>
+      <input type="text" id="fieldValue" name="fieldValue"><br>
+      <button type="submit" id="submitButton">Update</button>
+      <div class="disclaimer">Service account credentials are not stored.</div>
+    </form>
   </div>
-  
+  <footer>
+    <p>&copy; 2024 FireTool. All rights reserved.</p>
+  </footer>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       const fileInput = document.getElementById('serviceAccount');

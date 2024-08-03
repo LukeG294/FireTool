@@ -2,5 +2,72 @@ User-agent: *
 Disallow: /private/
 Disallow: /tmp/
 Disallow: /upload
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /*.pdf$
+
+Allow: /
+
+Sitemap: https://firetool.software/sitemap.xml
+
+# Additional directives to help with SEO and indexing
+# Allow all web crawlers to access CSS, JS, and image files
+Allow: /*.css
+Allow: /*.js
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.png
+Allow: /*.gif
+Allow: /*.webp
+Allow: /*.svg
+
+# Crawl-delay directive for all crawlers to avoid server overload
+Crawl-delay: 10
+
+# Specific directives for Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /search
+Disallow: /not-found
+
+# Specific directives for Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /search
+Disallow: /not-found
+
+# Directives for other known crawlers
+User-agent: Yandex
+Allow: /
+Disallow: /search
+Disallow: /not-found
+
+User-agent: Baiduspider
+Allow: /
+Disallow: /search
+Disallow: /not-found
+
+# Directives for Yahoo! Slurp
+User-agent: Slurp
+Allow: /
+Disallow: /search
+Disallow: /not-found
+
+# Blocking bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SEMrushBot
+Disallow: /
+
+User-agent: Dotbot
+Disallow: /
+
+# Allow everything else
+User-agent: *
+Allow: /
 
 Sitemap: https://firetool.software/sitemap.xml
