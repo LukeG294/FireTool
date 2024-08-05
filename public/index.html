@@ -5,17 +5,17 @@
      crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FireTool - The Best Firebase Firestore Database Storage Update Tool</title>
+  <title>FireTool - The Best Database Storage Update Tool</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="icon" href="https://static-00.iconduck.com/assets.00/fire-emoji-804x1024-u29u5i0c.png" type="image/png">
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="FireTool is the ultimate web tool for batch updating your Firebase Firestore database storage. Quickly and efficiently update multiple documents within your Firestore collections with ease.">
-  <meta name="keywords" content="Firebase, Firestore, database, storage, update, bulk update, batch update, web tool, Firebase Firestore tool, database management, FireTool, Firestore update, Firebase bulk update, database storage update, Firestore management tool, Firebase settings, Firebase web tool">
+  <meta name="description" content="FireTool is the ultimate web tool for batch updating your database storage. Quickly and efficiently update multiple documents within your datastore collections with ease.">
+  <meta name="keywords" content="database, datastore, database, storage, update, bulk update, batch update, web tool,  tool, database management, FireTool, datastore update, database bulk update, database storage update, datastore management tool, database settings, database web tool">
   <meta name="author" content="FireTool Team">
   <link rel="canonical" href="https://firetool.software">
-  <meta property="og:title" content="FireTool - The Best Firebase Firestore Database Storage Update Tool">
-  <meta property="og:description" content="FireTool is the ultimate web tool for batch updating your Firebase Firestore database storage. Quickly and efficiently update multiple documents within your Firestore collections with ease.">
+  <meta property="og:title" content="FireTool - The Best Database Storage Update Tool">
+  <meta property="og:description" content="FireTool is the ultimate web tool for batch updating your database storage. Quickly and efficiently update multiple documents within your datastore collections with ease.">
   <meta property="og:image" content="https://static-00.iconduck.com/assets.00/fire-emoji-804x1024-u29u5i0c.png">
   <meta property="og:url" content="https://firetool.software">
   <meta property="og:type" content="website">
@@ -232,19 +232,20 @@
   </nav>
   <div class="container">
     <div class="sidebar">
-      <h3>Firebase Resources</h3>
-      <a href="https://firebase.google.com/docs">Firebase Documentation</a>
-      <a href="https://firebase.google.com/docs/firestore">Firestore Guide</a>
-      <a href="https://firebase.google.com/docs/auth">Firebase Authentication</a>
-      <a href="https://firebase.google.com/docs/storage">Firebase Storage</a>
-      <a href="https://firebase.google.com/docs/functions">Firebase Cloud Functions</a>
-    </div>
+      <h3>Resources</h3>
+      <a href="https://cloud.google.com/storage/docs">Google Cloud Storage Documentation</a>
+      <a href="https://aws.amazon.com/s3/getting-started/">AWS S3 Guide</a>
+      <a href="https://docs.microsoft.com/en-us/azure/storage/">Azure Storage Documentation</a>
+      <a href="https://www.ibm.com/cloud/storage">IBM Cloud Storage</a>
+      <a href="https://www.oracle.com/cloud/storage/">Oracle Cloud Storage</a>
+  </div>
+  
     <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
-      <h1>Firestore Bulk Update</h1>
-      <h4 style="color:gray">A tool to help you update Firebase documents for development quickly in the web.</h4>
+      <h1>Database Bulk Update</h1>
+      <h4 style="color:gray">A tool to help you update documents for development quickly in the web.</h4>
       <label for="serviceAccount">Service Account File:
         <span class="tooltip">?
-          <span class="tooltiptext">You can generate one in your Firebase project settings.</span>
+          <span class="tooltiptext">You can generate one in your project settings.</span>
         </span>
       </label>
       <div class="file-drop-area" id="fileDropArea">
