@@ -240,7 +240,7 @@
       <a href="https://www.oracle.com/cloud/storage/">Oracle Cloud Storage</a>
   </div>
   
-    <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+    <form id="uploadForm" action="/api/upload" method="post" enctype="multipart/form-data">
       <h1>Database Bulk Update</h1>
       <h4 style="color:gray">A tool to help you update documents for development quickly in the web.</h4>
       <label for="serviceAccount">Service Account File:
@@ -328,7 +328,7 @@
 
         const formData = new FormData(form);
 
-        fetch('/upload', {
+        fetch('/api/upload', {
           method: 'POST',
           body: formData
         })
