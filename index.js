@@ -37,7 +37,7 @@ app.post('/upload', upload.single('serviceAccount'), async (req, res, next) => {
     // Initialize Firebase with the service account
     if (!admin.apps.length) {
       admin.initializeApp({
-        credential: admin.credential.cert(serviceAccount),
+        credential: admin.credential.cert(serviceAccount)
       });
     }
 
